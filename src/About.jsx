@@ -1,15 +1,3 @@
-// import React from 'react'
-
-// function About() {
-//   return (
-//     <div>
-//       <h1>about</h1>
-//     </div>
-//   )
-// }
-
-// export default About
-
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -19,7 +7,7 @@ function About() {
   return (
     <div className="bg-[#f8f5f2] text-[#2e2e2e] bg-gray-100">
 
-      {/* HERO SECTION */}
+
       <div className="px-10 py-28 flex flex-col items-center text-center">
         
         <p className="text-sm tracking-widest text-gray-500 mb-4">
@@ -37,10 +25,9 @@ function About() {
 
       </div>
 
-      {/* SPLIT SECTION */}
+  
       <div className="px-10 py-20 flex flex-col md:flex-row items-center gap-16">
 
-        {/* LEFT TEXT */}
         <div className="flex-1">
           <h2 className="text-3xl font-medium mb-6">
             Our Story
@@ -58,7 +45,7 @@ function About() {
           </p>
         </div>
 
-        {/* RIGHT IMAGE */}
+      
         <div className="flex-1">
           <img 
             src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
@@ -69,7 +56,7 @@ function About() {
 
       </div>
 
-      {/* VALUES SECTION */}
+    
       <div className="px-10 py-20 text-center">
 
         <h2 className="text-3xl font-medium mb-12">
@@ -103,7 +90,7 @@ function About() {
 
       </div>
 
-      {/* CTA */}
+  
       <div className="px-10 py-24 text-center">
         
         <h2 className="text-3xl mb-6">

@@ -1,5 +1,3 @@
-
-
 import React, { useContext } from 'react'
 import { productContext } from './App'
 import Navbar from './Navbar'
@@ -14,11 +12,7 @@ function Product() {
 
   return (
     <>
-
-      {/* PAGE BACKGROUND */}
       <div className="bg-white min-h-screen px-10 py-10">
-
-        {/* HEADER */}
         <div className="mb-12 max-w-2xl">
           <p className="text-xs tracking-[0.2em] text-gray-500 mb-3">
             SELECTED COLLECTION

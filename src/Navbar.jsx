@@ -1,34 +1,3 @@
-// import React from 'react'
-// import { Link } from 'react-router-dom'
-// import { FaShoppingCart, FaUser } from 'react-icons/fa'
-
-// function Navbar() {
-//   return (
-//     <nav className="flex items-center justify-between px-10 py-6 bg-[#f8f5f2] shadow-sm">
-
-//       <h1 className="text-2xl font-semibold tracking-wide text-[#5a3e36]">
-//          MyStore</h1>
-
-//       <div className="flex gap-10 text-[#7a5c50] font-medium">
-//         <Link to="/" className="hover:text-[#5a3e36] transition">Home</Link>
-//         <Link to="/about" className="hover:text-[#5a3e36] transition">About</Link>
-//         <Link to="/product" className="hover:text-[#5a3e36] transition">Products</Link>
-//       </div>
-
-//       <div className="flex items-center gap-6 text-[#5a3e36] text-lg">
-//         <Link to="/cart" className="hover:scale-110 transition"><FaShoppingCart /></Link>
-//         <Link to="/login" className="hover:scale-110 transition"><FaUser /></Link>
-//       </div>
-
-//     </nav>
-//   )
-// }
-
-// export default Navbar
-
-
-
-
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaShoppingCart, FaUser } from 'react-icons/fa'

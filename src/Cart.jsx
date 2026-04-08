@@ -21,7 +21,6 @@ function Cart() {
 
       <div className="flex flex-col lg:flex-row gap-10">
 
-        {/* LEFT SIDE */}
         <div className="flex-1">
 
           {cart.length === 0 ? (
