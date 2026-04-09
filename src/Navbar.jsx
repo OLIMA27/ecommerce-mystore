@@ -6,12 +6,11 @@ function Navbar() {
   return (
     <nav className="sticky top-0 z-50 flex items-center justify-between px-12 py-5 bg-[#f8f5f2]/90 backdrop-blur-md shadow-sm">
 
-      {/* LOGO */}
+   
       <h1 className="text-2xl font-semibold tracking-wide text-[#5a3e36] cursor-pointer hover:opacity-80 transition">
         MyStore
       </h1>
 
-      {/* CENTER LINKS */}
       <div className="flex gap-12 text-[#7a5c50] font-medium">
         <Link 
           to="/" 
@@ -38,7 +37,7 @@ function Navbar() {
         </Link>
       </div>
 
-      {/* RIGHT ICONS */}
+
       <div className="flex items-center gap-6 text-[#5a3e36] text-lg">
         
         <Link 

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { productContext } from './App'
-import Navbar from './Navbar'
+
 
 function Product() {
   const { productData, cart, setCart } = useContext(productContext)
