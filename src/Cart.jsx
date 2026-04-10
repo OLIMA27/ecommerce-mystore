@@ -62,7 +62,7 @@ function Cart() {
 
         </div>
 
-        {/* RIGHT SIDE - SIMPLE TOTAL */}
+       
         <div className="w-full lg:w-[300px] bg-white rounded-xl shadow-md p-6 h-fit">
 
           <h2 className="text-lg font-semibold mb-4 text-gray-800">

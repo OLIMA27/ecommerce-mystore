@@ -41,7 +41,6 @@ function Product() {
 
               <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition p-3">
 
-                {/* Image */}
                 <div className="w-full h-48 overflow-hidden rounded-lg mb-3">
                   <img
                     src={value.img}

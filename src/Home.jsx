@@ -10,10 +10,17 @@ import Makeup from './assets/Makeup.avif'
 import Footwear from './assets/Footwear.webp'
 import Jewellery from './assets/Jewellery.webp'
 import Grocery from './assets/Grocery.jpg'
+import Backpack from './assets/Backpack.jpg'
+import Laptop from './assets/Laptop.webp'
+import Runningshoe from './assets/Runningshoe.jpg'
+import Smartwatch from './assets/Smartwatch.jpg'
 import { FaArrowRight } from 'react-icons/fa'
+import { FaStar, FaRegStar, FaStarHalfAlt } from 'react-icons/fa'
+   import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 
 function Home() {
   const navigate = useNavigate()
+
 
   const categories = [
     { img: Fruniture, text: "Furniture", category: "furniture" },
@@ -26,10 +33,10 @@ function Home() {
     { img: Grocery, text: "Grocery", category: "grocery" }
   ]
   const featureProducts = [
-    { img: Fruniture, text: "Furniture", price: 477, category: "furniture" },
-    { img: Homedec, text: "Home", price: 477, category: "home" },
-    { img: Saree, text: "Saree", price: 477, category: "saree" },
-    { img: Mens, text: "Mens Fashion", price: 477, category: "mens" }
+    { img: Backpack, text: "Backpack", price: 477, rating: 4 },
+    { img: Laptop, text: "Laptop", price: 477, rating: 5 },
+    { img: Runningshoe, text: "Running Shoe", price: 477, rating: 3 },
+    { img: Smartwatch, text: "Smart Watch", price: 477, rating: 4 }
   ]
   return (
     <div className="bg-gray-100 min-h-screen">
@@ -66,32 +73,41 @@ function Home() {
         </div>
       </div>
 
-      <div className="px-12 py-16 bg-white mt-20">
-        <h2 className="text-3xl font-semibold text-center text-gray-800"> Featured Products </h2>
 
-        <p className="text-gray-500 text-center mt-2 mb-10 text-sm"> Selected highlights from our latest collection. </p>
+      <div className="px-12 py-20 bg-gradient-to-b from-gray-50 to-white mt-20">
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <h2 className="text-3xl font-semibold text-center text-gray-800">Featured Products</h2>
+
+        <p className="text-gray-500 text-center mt-2 mb-12 text-sm">
+          Selected highlights from our latest collection.
+        </p>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
           {featureProducts.map((value, index) => (
-            <div key={index} className="group">
-              <div className="rounded-xl overflow-hidden">
-                <img src={value.img} alt="" className="w-full h-68 object-cover group-hover:scale-105 transition duration-300" />
+            <div key={index} className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden" >
+
+              <div className="relative overflow-hidden">
+                <img src={value.img} alt="" className="w-full h-64 object-cover group-hover:scale-110 transition duration-500"/>
+
+                <span className="absolute top-3 left-3 bg-black text-white text-xs px-2 py-1 rounded">  New</span>
+
               </div>
 
-              <div className="mt-4">
-                <div className="flex justify-between items-center">
-                  <h4 className="text-gray-800 font-medium text-sm"> {value.text}</h4>
-                  <p className="text-gray-700 text-sm font-medium">${value.price}
-                  </p>
+              <div className="p-4">
+                <h4 className="text-gray-800 font-medium text-sm mb-1"> {value.text} </h4>
+
+                <div className="flex text-yellow-400 text-xs mb-2">
+                  <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaRegStar />
                 </div>
-                <button className="mt-4 w-full py-2 bg-gray-400 text-gray-700 text-xs rounded-md hover:bg-gray-300 transition"> ADD TO CART</button>
+
+                <p className="text-gray-900 font-semibold"> ${value.price}</p>
+
               </div>
             </div>
           ))}
         </div>
+
       </div>
-
-
       <div className="px-12 py-18 bg-gray-100">
         <div className="grid md:grid-cols-2 items-center">
 
@@ -115,6 +131,73 @@ function Home() {
           </div>
         </div>
       </div>
+
+
+
+
+   
+<div className="bg-white text-gray-700 px-10 py-12 mt-20">
+
+  <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+
+    {/* About */}
+    <div>
+      <h2 className="text-xl font-semibold text-gray-900 mb-4">MyStore</h2>
+      <p className="text-sm leading-relaxed">
+        Your one-stop destination for fashion, electronics, and everyday essentials.
+        Shop smart, live better.
+      </p>
+    </div>
+
+    {/* Quick Links */}
+    <div>
+      <h3 className="text-gray-900 font-medium mb-4">Quick Links</h3>
+      <ul className="space-y-2 text-sm">
+        <li className="hover:text-black cursor-pointer">Home</li>
+        <li className="hover:text-black cursor-pointer">Shop</li>
+        <li className="hover:text-black cursor-pointer">About</li>
+        <li className="hover:text-black cursor-pointer">Contact</li>
+      </ul>
+    </div>
+
+    {/* Categories */}
+    <div>
+      <h3 className="text-gray-900 font-medium mb-4">Categories</h3>
+      <ul className="space-y-2 text-sm">
+        <li>Electronics</li>
+        <li>Fashion</li>
+        <li>Home & Living</li>
+        <li>Beauty</li>
+      </ul>
+    </div>
+
+    {/* Social */}
+    <div>
+      <h3 className="text-gray-900 font-medium mb-4">Follow Us</h3>
+      <div className="flex gap-4">
+        <div className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 cursor-pointer">
+          <FaFacebookF />
+        </div>
+        <div className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 cursor-pointer">
+          <FaTwitter />
+        </div>
+        <div className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 cursor-pointer">
+          <FaInstagram />
+        </div>
+        <div className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 cursor-pointer">
+          <FaLinkedinIn />
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  {/* Bottom */}
+  <div className="border-t border-gray-300 mt-10 pt-6 text-center text-sm">
+    © 2026 MyStore. All rights reserved.
+  </div>
+
+</div>
     </div>
   )
 }
