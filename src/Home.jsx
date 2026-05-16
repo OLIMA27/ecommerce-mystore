@@ -47,7 +47,7 @@ function Home() {
           <img
             src={bg}
             alt=""
-            className="w-full h-full object-cover md:object-cover lg:object-cover object-[center_top]sm:object-center"/>
+            className="w-full h-full object-cover md:object-cover lg:object-cover object-[center_top]sm:object-center" />
 
           <div className="absolute inset-0 bg-black/10"></div>
           <div className="absolute inset-0 flex items-center justify-center">
@@ -79,38 +79,10 @@ function Home() {
           </div>
 
         </div>
-        <div className="px-4 sm:px-6 md:px-10 py-12 mt-10">
-
-          <p className="text-sm text-gray-500">BROWSE BY</p>
-
-          <h2 className="text-2xl font-semibold mb-6">
-            Curated Categories
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
-            {categories.map((value, index) => (
-              <div
-                key={index}
-                className="cursor-pointer bg-white p-4 rounded-xl hover:shadow-md transition" >
-                <img
-                  src={value.img}
-                  alt=""
-                  className="w-full h-40 object-cover rounded-lg"/>
-
-                <h4 className="mt-3 text-center text-gray-700 font-medium">
-                  {value.text}
-                </h4>
-
-              </div>
-            ))}
-
-          </div>
-
-        </div>
+      
 
       </div>
-      
+
       <div className="px-4 sm:px-6 md:px-10 py-12 mt-10">
         <p className="text-sm text-gray-500">BROWSE BY</p>
         <h2 className="text-2xl font-semibold mb-6">Curated Categories</h2>
@@ -161,7 +133,7 @@ function Home() {
         </div>
 
       </div>
-      
+
       <div className="px-4 sm:px-6 md:px-12 py-12 md:py-18 bg-gray-100">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
@@ -181,7 +153,7 @@ function Home() {
           </div>
 
           <div className="flex justify-end">
-           
+
             <img src={bg1} alt="" className="w-full md:w-[70%] h-[250px] sm:h-[320px] md:h-[380px] object-cover rounded-2xl" />
           </div>
         </div>
@@ -209,7 +181,7 @@ function Home() {
             </ul>
           </div>
 
-          
+
           <div>
             <h3 className="text-gray-900 font-medium mb-4">Categories</h3>
             <ul className="space-y-2 text-sm">
@@ -220,7 +192,7 @@ function Home() {
             </ul>
           </div>
 
-         
+
           <div>
             <h3 className="text-gray-900 font-medium mb-4">Follow Us</h3>
             <div className="flex gap-4">
@@ -241,7 +213,7 @@ function Home() {
 
         </div>
 
-        
+
         <div className="border-t border-gray-300 mt-10 pt-6 text-center text-sm">
           © 2026 MyStore. All rights reserved.
         </div>
