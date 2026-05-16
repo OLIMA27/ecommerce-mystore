@@ -7,6 +7,8 @@ import Cart from './Cart'
 import About from './About'
 import Login from './Login'
 import Navbar from './Navbar'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import Fruniture1 from './assets/Fruniture1.jpg'
 import Fruniture2 from './assets/Fruniture2.jpg'
 import Fruniture3 from './assets/Fruniture3.jpg'
@@ -62,21 +64,21 @@ function App() {
 
     { id: 12, img: Grocery1, name: "Mixed Dry Fruits Pack", price: 250, category: "grocery" },
 
-  
+
     { id: 13, img: Footwear1, name: "Sneakers", price: 600, category: "footwear" },
     { id: 14, img: Footwear2, name: "Casual Shoes", price: 550, category: "footwear" },
     { id: 15, img: Footwear3, name: "Running Shoes", price: 700, category: "footwear" },
 
 
-  { id: 16, img: Jewellery1, name: "Traditional Gold Necklace Set", price: 1500, category: "accessories" },
-{ id: 17, img: Jewellery2, name: "Designer Drop Earrings", price: 800, category: "accessories" },
-{ id: 18, img: Jewellery3, name: "Elegant Chain Bracelet", price: 600, category: "accessories" },
-{ id: 19, img: Jewellery4, name: "Crystal Studded Ring", price: 500, category: "accessories" },
+    { id: 16, img: Jewellery1, name: "Traditional Gold Necklace Set", price: 1500, category: "accessories" },
+    { id: 17, img: Jewellery2, name: "Designer Drop Earrings", price: 800, category: "accessories" },
+    { id: 18, img: Jewellery3, name: "Elegant Chain Bracelet", price: 600, category: "accessories" },
+    { id: 19, img: Jewellery4, name: "Crystal Studded Ring", price: 500, category: "accessories" },
 
-{ id: 20, img: Mens1, name: "Printed Casual T-Shirt", price: 300, category: "mens" },
-{ id: 21, img: Mens2, name: "Slim Fit Cotton Shirt", price: 500, category: "mens" },
-{ id: 22, img: Mens3, name: "Classic Blue Denim Jeans", price: 900, category: "mens" },
-{ id: 23, img: Mens4, name: "Premium Winter Jacket", price: 1200, category: "mens" }
+    { id: 20, img: Mens1, name: "Printed Casual T-Shirt", price: 300, category: "mens" },
+    { id: 21, img: Mens2, name: "Slim Fit Cotton Shirt", price: 500, category: "mens" },
+    { id: 22, img: Mens3, name: "Classic Blue Denim Jeans", price: 900, category: "mens" },
+    { id: 23, img: Mens4, name: "Premium Winter Jacket", price: 1200, category: "mens" }
 
   ])
 
@@ -84,6 +86,23 @@ function App() {
 
   return (
     <>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={1800}
+        hideProgressBar={true}
+        newestOnTop
+        closeOnClick
+        pauseOnHover={false}
+        draggable={false}
+        icon={false}
+        closeButton={false}
+        toastClassName={() =>
+          "bg-[#7a5c50]  shadow-lg w-70 p-2"
+        }
+        bodyClassName={() =>
+          "text-white"
+        }
+      />
       <BrowserRouter>
         <productContext.Provider value={{ productData, cart, setCart }}>
           <Navbar />
